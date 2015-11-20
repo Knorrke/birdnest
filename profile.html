@@ -16,14 +16,18 @@ line {
 	stroke: #777;
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
-    <div id="charts">
-    </div>
     <div id="controls">
-    Anzahl:<input type="text" id="counter" value="1000"><button class="recreate">Create</button>
+    Number of Lines:<input type="text" id="lineCounter" value="1000"><br>
+
+    Number of SVGs:<input type="text" id="svgCounter" value="6"><button id="recreate">Create</button>
     </div>
+    <div id="testresults"></div>
+    <div id="charts"></div>
     <script src="d3.v3.min.js"></script>
     <script src="profile.js"></script>
+    <script src="test.js"></script>
 </body>
 </html>
